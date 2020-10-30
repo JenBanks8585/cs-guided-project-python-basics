@@ -10,5 +10,7 @@ Examples:
 - find_perimeter(2, 9) ➞ 22
 """
 def find_perimeter(length, width):
-    # Your code here
+    return 2*(length + width)
+
+print(find_perimeter(2,3))
 

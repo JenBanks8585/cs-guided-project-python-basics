@@ -15,6 +15,21 @@ Examples:
 - XO("zpzpzpp") ➞ True (Returns True if no x and o)
 - XO("zzoo") ➞ False
 """
-def XO(txt):
-    # Your code here
+#import regex as re
 
+#def XO(txt):
+#  count_o = len(re.findall("o", txt))
+#  count_x = len(re.findall("x", txt))
+#  if count_o ==count_x:
+#    return True
+#  elif count_o ==0 or count_x == 0:
+#    return True
+#  else:
+#    return False
+
+def XO(txt):
+    x = txt.lower().count('x')
+    o = txt.lower().count('o')
+    return x == o
+
+print(XO('we'))

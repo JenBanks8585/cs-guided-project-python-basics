@@ -9,5 +9,14 @@ Examples:
 - string_int("12") ➞ 12
 """
 def string_int(txt):
-    # Your code here
+    
+    return int(float(txt))
+
+print(string_int("2"))
+print(type(string_int("2")))
+
+
+print(string_int("3.2"))
+print(type(string_int("3.2")))
+
 
